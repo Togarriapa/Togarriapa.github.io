@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e0f11;
+  color: #d0d0d0;
+}
+
+a {
+  color: #d0d0d0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+#hero {
+  background-color: #007bff;
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  background-image: url('https://cdn.pixabay.com/photo/2017/03/21/02/00/background-2168702_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#education .row,
+#experience .row {
+  border-bottom: 2px solid #3a3f4b;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+#skills .row {
+  margin-bottom: 20px;
+}
+
+#contacts p {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+}
+
+.btn-fun {
+  background-color: #3a3f4b;
+  border: 2px solid #007bff;
+  color: #d0d0d0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+
+.btn-fun:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.animated {
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
