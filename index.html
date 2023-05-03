@@ -1,171 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomas Fonseca | Junior Software Developer</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <title>Tomás Fonseca | Junior Software Developer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMxmnO8GeMBxREDl7Tcko0AkMqFPEJpe8v/6Rw1zZt04Kw8M8m_tF3Mj9X4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-  </head>
+    <script src="scripts.js" defer></script>
+</head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="#">Tomas Fonseca</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacts">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <div class="container">
-                <div class="row align-items-center">
-                  <div class="col-md-6">
-                    <h1 class="display-4">Tomas Fonseca</h1>
-                    <p class="lead">Junior Software Developer</p>
-                    <a href="#contacts" class="btn btn-fun">Hire Me!</a>
-                </div>
-                    <div class="col-md-6">
-                      <img src="https://media.licdn.com/dms/image/D4D03AQHxzuR6Qusl-g/profile-displayphoto-shrink_800_800/0/1679483128063?e=1688601600&v=beta&t=uEwTy3qm4PC6hrg_Vd36qzgphkM5tG1AMkkGNonoGoU" alt="Tomas Fonseca" class="img-fluid rounded-circle">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="education" class="bg-light py-5">
-            <div class="container">
-              <h2 class="animated fadeIn">Education</h2>
-                <!-- Fullstack Development Bootcamp -->
-                <div class="row my-4">
-                    <div class="col-md-9">
-                        <h3>Fullstack Development Bootcamp</h3>
-                        <p>Academia de Código, Lisbon, Portugal</p>
-                        <p>16 Jan 2023 - 21 April 2023</p>
-                        <p>This course was an incredible experience, and it tapped into my passion for puzzles and solving problems. While the bootcamp covered fullstack development, and provided me with a comprehensive training in a wide range of programming concepts, I discovered that I am particularly drawn to backend development. Overall, this course was challenging, but it provided me with an opportunity to grow and develop my programming skills. I am grateful for the experience and excited to apply my new knowledge and skills to real-world programming challenges.</p>
-                    </div>
-                </div>
-                <!-- Licenciate Degree in Nursing -->
-                <div class="row my-4">
-                    <div class="col-md-9">
-                        <h3>Licenciate Degree in Nursing</h3>
-                        <p>Politecnic Instituit of Santarém, Santarém, Portugal</p>
-                        <p>2014 - 2019</p>
-                    </div>
-                </div>
-                <!-- Bachelor in Computer Science -->
-                <div class="row my-4">
-                    <div class="col-md-9">
-                        <h3>(Frequented) Bachelor in Computer Science</h3>
-                        <p>New University of Lisbon, Lisbon, Portugal</p>
-                        <p>2013 - 2014</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="py-5">
-            <div class="container">
-              <h2 class="animated fadeIn">Experience</h2>
-              <h3 class="animated slideInRight">Operation Room Nurse | Anesthesia Nurse | ICU Nurse</h3>
-                <ul>
-                    <li>Cuf Tejo Hospital (07/2021 - 01/2023)</li>
-                    <li>Ordem Terceira Hospital (06/2020 - 07/2021)</li>
-                    <li>Beatriz Ângelo Hospital (11/2019 - 07/2021)</li>
-                    <li>Cascais Hospital (08/2019 - 11/2019)</li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Junior Software Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="education.html">Education</a>
+                    </li>
                 </ul>
             </div>
-        </section>
-        <section id="skills" class="bg-light py-5">
+        </div>
+    </nav>
+    </header>
+
+    <main>
+        <section id="home" class="jumbotron jumbotron-fluid bg-primary text-white text-center">
             <div class="container">
-              <h2 class="animated fadeIn">Skills</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Languages</h3>
-                        <ul>
-                          <li>Java</li>
-                          <li>JavaScript</li>
-                          <li>mySQL</li>
-                          <li>HTML</li>
-                          <li>CSS</li>
-                      </ul>
-                  </div>
-                  <div class="col-md-4">
-                      <h3>Frameworks</h3>
-                      <ul>
-                          <li>Bootstrap</li>
-                          <li>Spring</li>
-                          <li>MVC</li>
-                          <li>Spring Boot</li>
-                          <li>Hibernate</li>
-                          <li>JUnit</li>
-                          <li>Mockito</li>
-                      </ul>
-                  </div>
-                  <div class="col-md-4">
-                      <h3>Libraries</h3>
-                      <ul>
-                          <li>React</li>
-                          <li>JQuery</li>
-                          <li>SimpleGraphicsGFX</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="row mt-3">
-                  <div class="col-md-4">
-                      <h3>Others</h3>
-                      <ul>
-                          <li>IntelliJ</li>
-                          <li>GIT</li>
-                          <li>VIM</li>
-                          <li>Apache</li>
-                          <li>Tomcat</li>
-                          <li>Apache Ant</li>
-                          <li>Scrum</li>
-                          <li>Maven</li>
-                          <li>Thymeleaf</li>
-                          <li>AJAX</li>
-                          <li>REST API</li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section id="contacts" class="py-5">
-          <div class="container">
-            <h2 class="animated fadeIn">Contacts</h2>
-              <p>Email: tomas.g.fonseca@gmail.com</p>
-              <p>Phone: +351 913 294 219</p>
-              <p>Linkedin: <a href="https://www.linkedin.com/in/tomasgfonseca/" target="_blank">https://www.linkedin.com/in/tomasgfonseca/</a></p>
-              <p>GitHub: <a href="https://github.com/Togarriapa" target="_blank">https://github.com/Togarriapa</a></p>
-          </div>
-      </section>
-  </main>
-  <footer class="text-center bg-primary text-white py-3">
-      <p>&copy; 2023 Tomas Fonseca. All rights reserved.</p>
-  </footer>
+                <img src="https://media.licdn.com/dms/image/D4D03AQHxzuR6Qusl-g/profile-displayphoto-shrink_800_800/0/1679483128063?e=1688601600&v=beta&t=uEwTy3qm4PC6hrg_Vd36qzgphkM5tG1AMkkGNonoGoU" alt="Tomás Fonseca" class="rounded-circle" width="200" height="200">
+                <h1 class="display-4">Junior Software Developer</h1>
+                <p class="lead">Passionate about backend development and problem-solving.</p>
+            </div>
+        </section>
+
+</main>
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2023 Tomás Fonseca. All rights reserved.</p>
+</footer>
 </body>
 </html>
-
-

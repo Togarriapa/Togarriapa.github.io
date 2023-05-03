@@ -1,145 +1,56 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0e0f11;
-  color: #ffffff;
+  background-color: #222;
+  color: #f1f1f1;
 }
 
-a {
-  color: #d0d0d0;
-  text-decoration: none;
-}
-
-a:hover {
+h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-#hero {
-  background-color: #172f49;
-  color: white;
-  padding: 100px 0;
-  position: relative;
+.section-title {
+  margin-bottom: 1.5rem;
 }
 
-#hero::before {
-  content: '';
-  background-image: url('https://media.licdn.com/dms/image/D4D16AQFh1GroGzgGIw/profile-displaybackgroundimage-shrink_350_1400/0/1682287723996?e=1688601600&v=beta&t=xrufZmoDWPbN2ALUNJePmyTiAYviQG1bHP9pL2w1IZg');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  z-index: -1;
+a {
+  color: #f1f1f1;
 }
 
-#education .row,
-#experience .row {
-  border-bottom: 2px solid #3a3f4b;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-#skills .row {
-  margin-bottom: 20px;
-}
-
-#contacts p {
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: #172f49;
-  color: white;
-  padding: 20px 0;
-}
-
-.btn-fun {
-  background-color: #3a3f4b;
-  border: 2px solid #172f49;
-  color: #d0d0d0;
-  text-align: center;
+a:hover {
+  color: #ccc;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 12px;
-  padding: 10px 24px;
-}
-
-.btn-fun:hover {
-  background-color: #007bff;
-  color: white;
-}
-
-.animated {
-  animation-fill-mode: both;
-}
-
-@keyframes fadeIn {
+  }
+  
+  .section {
+  padding: 3rem 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
   from {
-    opacity: 0;
-    transform: translateY(20px);
+  opacity: 0;
+  transform: translateY(30px);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
   }
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-}
-
-@keyframes slideInRight {
-  from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
   }
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.slideInRight {
-  animation-name: slideInRight;
-  animation-duration: 1s;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.bounce {
-  animation-name: bounce;
+  
+  .fadeInUp {
+  animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  
+  .delay-2 {
+  animation-delay: 0.2s;
   }
-}
-
-.spin {
-  animation-name: spin;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
+  
+  .delay-4 {
+  animation-delay: 0.4s;
+  }
+  
+  .delay-6 {
+  animation-delay: 0.6s;
+  }
