@@ -22,7 +22,7 @@ a:hover {
 
 #hero::before {
   content: '';
-  background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg?w=1380&t=st=1683142699~exp=1683143299~hmac=2af558cc50e780c93319e586af63600760b74619758be09bfbb47b42901e0fc2');
+  background-image: url('https://media.licdn.com/dms/image/D4D16AQFh1GroGzgGIw/profile-displaybackgroundimage-shrink_350_1400/0/1682287723996?e=1688601600&v=beta&t=xrufZmoDWPbN2ALUNJePmyTiAYviQG1bHP9pL2w1IZg');
   background-size: cover;
   background-position: center;
   position: absolute;
