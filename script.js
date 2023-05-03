@@ -12,13 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeInUpElements.forEach(el => {
       observer.observe(el);
   });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-  var navButton = document.querySelector('.navbar-toggler');
-  var navCollapse = document.querySelector('#navbarNav');
-
-  navButton.addEventListener('click', function() {
-      navCollapse.classList.toggle('collapse');
+  // Toggle the collapse class on navbarNav element
+  var navbarToggler = document.getElementById('navbar-toggler');
+  navbarToggler.addEventListener('click', function () {
+    var navbarCollapse = document.getElementById('navbarNav');
+    navbarCollapse.classList.toggle('show');
   });
 });
