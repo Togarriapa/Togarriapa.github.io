@@ -5,42 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomás Fonseca | Junior Software Developer</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-+ZLsk6jKl6iF3qWfKTZ1dBr2gdH/Z19P+Jwd0aAogRiLzfvBy0mXicY47B6ZJp6o+P6lvFboOQcN6oN0C0b+6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Tomás Fonseca</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="experience.html">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="education.html">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skills.html">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacts.html">Contacts</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="path/to/your/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Tomás Fonseca
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="fas fa-user"></i> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="skills.html"><i class="fas fa-code"></i> Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html"><i class="fas fa-tasks"></i> Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html"><i class="fas fa-envelope"></i> Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      
 
     <main>
         <section id="home" class="jumbotron jumbotron-fluid bg-primary text-white text-center">
@@ -53,36 +57,22 @@
 
 <!-- Projects Section -->
 <section id="projects" class="section">
-  <div class="container">
-      <h2 class="section-title fadeInUp">Projects</h2>
-      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <div class="row">
-                      <div class="col-md-4">
-                          <div class="card">
-                              <img src="sample_project_image.jpg" class="card-img-top" alt="Sample Project">
-                              <div class="card-body">
-                                  <h5 class="card-title">Sample Project</h5>
-                                  <p class="card-text">A brief description of the sample project goes here.</p>
-                                  <a href="https://example.com/your-project-link" class="btn btn-primary">View Project</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+    <div class="container">
+        <div class="row">
+          <!-- Add the following code for each project -->
+          <div class="col-md-2 mb-4">
+            <div class="card">
+              <img src="path/to/project-image.jpg" class="card-img-top" alt="Project Image">
+              <div class="card-body">
+                <h5 class="card-title">Project Title</h5>
+                <p class="card-text">Project Description</p>
+                <a href="#" class="btn btn-primary">View Project</a>
               </div>
-              <!-- Add more projects here by duplicating the above structure and adjusting the content -->
+            </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
+          <!-- Add the code for the remaining projects -->
+        </div>
       </div>
-  </div>
 </section>
     </main>
     <footer class="bg-dark text-white text-center py-3">
