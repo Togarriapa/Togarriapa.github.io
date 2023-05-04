@@ -152,7 +152,47 @@ h6 {
 }
 
 .education-date {
-  font.dark {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.education-school {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.education-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  .education-date {
+    font-size: 1rem;
+  }
+
+  .education-title {
+    font-size: 1.2rem;
+  }
+
+  .education-school {
+    font-size: 1rem;
+  }
+
+  .education-description {
+    font-size: 1rem;
+  }
+}
+  
+  .dark {
     background-color: #0F0F10;
     color: #fff;
     }
