@@ -34,14 +34,40 @@ h6 {
   font-weight: bold;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+.container {
+  max-width: 1200px;
+  margin: 10 auto;
+  padding: 0 15px;
 }
 
-.btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+.dark {
+  background-color: #0F0F10;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #0F0F10;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-secondary,
+.btn-secondary:hover,
+.btn-outline-primary,
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .timeline {
@@ -80,59 +106,8 @@ h6 {
   color: #fff;
 }
 
-.timeline > li .timeline-body > .timeline-heading > h4 {
-  margin-top: 0;
-  color: inherit;
-}
-
 .timeline > li:last-child {
   margin-bottom: 0;
-}
-
-@media (max-width: 767px) {
-  ul.timeline:before {
-    left: 40px;
-  }
-
-  ul.timeline > li > .timeline-panel {
-    width: calc(100% - 90px);
-    width: -moz-calc(100% - 90px);
-    width: -webkit-calc(100% - 90px);
-  }
-
-  ul.timeline > li > .timeline-panel .timeline-heading h4 {
-    font-size: 18px;
-  }
-
-  ul.timeline > li > .timeline-panel .timeline-body > p,
-  ul.timeline > li > .timeline-panel .timeline-body > ul {
-    font-size: 16px;
-  }
-
-  ul.timeline > li > .timeline-panel:before {
-    top: 15px;
-    left: -5px;
-  }
-}
-
-@media (max-width: 575px) {
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-  }
-
-  .timeline > li .timeline-body:before {
-    top: 23px;
-    left: auto;
-    right: -15px;
-    border-width: 8px;
-    border-color: transparent #fff transparent transparent;
-  }
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .education-wrapper {
@@ -146,19 +121,8 @@ h6 {
   margin-bottom: 20px;
 }
 
-.education-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
 .education-date {
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.education-title {
-  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -174,238 +138,151 @@ h6 {
   margin-bottom: 20px;
 }
 
-@media (max-width: 575px) {
-  .education-date {
-    font-size: 1rem;
-  }
+.card {
+  border-radius: 15px;
+  border: none;
+  background-color: #1E1E20;
+}
 
-  .education-title {
+.card-header,
+.card-footer {
+  background-color: #252529;
+  border-radius: 15px 15px 0 0;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-body {
+  position: relative;
+}
+
+.timeline-time {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff
+}
+.timeline-panel {
+background-color: #1E1E20;
+border-radius: 10px;
+border: none;
+padding: 2rem;
+margin-bottom: 2rem;
+}
+
+.timeline-heading {
+margin-bottom: 1.5rem;
+}
+
+.timeline-heading p,
+.timeline-body p {
+font-size: 1.2rem;
+margin-bottom: 1rem;
+}
+
+.contact-form {
+background-color: #1E1E20;
+border-radius: 15px;
+padding: 2rem;
+}
+
+.contact-form h1 {
+margin-top: 0;
+}
+
+.contact-form label {
+font-size: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+background-color: #252529;
+border: none;
+border-radius: 5px;
+color: #fff;
+margin-bottom: 1rem;
+padding: 0.5rem;
+}
+
+.contact-form textarea {
+height: 200px;
+}
+
+.contact-form button {
+margin-top: 1rem;
+float: right;
+}
+
+@media (max-width: 767px) {
+.timeline-panel {
+padding: 1rem;
+}
+.card-title {
+font-size: 1.2rem;
+}
+
+.card-text {
+font-size: 1rem;
+}
+}
+
+@media (max-width: 575px) {
+.navbar-nav .nav-link {
+font-size: 1rem;
+}
+
+.timeline > li .timeline-body:before {
+top: 23px;
+left: auto;
+right: -15px;
+border-width: 8px;
+border-color: transparent #fff transparent transparent;
+}
+
+.education-date,
+.education-title,
+.education-school,
+.education-description {
+font-size: 1rem;
+}
+}
+
+@media (max-width: 767px) {
+  .timeline-panel {
+    padding: 1rem;
+  }
+  .card-title {
     font-size: 1.2rem;
   }
 
-  .education-school {
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-nav .nav-link {
     font-size: 1rem;
   }
 
+  .timeline > li .timeline-body:before {
+    top: 23px;
+    left: auto;
+    right: -15px;
+    border-width: 8px;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .education-date,
+  .education-title,
+  .education-school,
   .education-description {
     font-size: 1rem;
   }
 }
-  
-  .dark {
-    background-color: #0F0F10;
-    color: #fff;
-    }
-    
-    .light {
-    background-color: #fff;
-    color: #0F0F10;
-    }
-    
-    .btn{
-    font-weight: bold;
-    border-radius: 20px;
-    transition: all 0.2s;
-    }
-    
-    .btn:hover {
-    transform: scale(1.1);
-    }
-    
-    .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    }
-    
-    .btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-    }
-    
-    .btn-secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
-    }
-    
-    .btn-secondary:hover {
-    background-color: #5a6268;
-    border-color: #545b62;
-    }
-    
-    .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
-    }
-    
-    .btn-outline-primary:hover {
-    background-color: #007bff;
-    color: #fff;
-    }
-    
-    .card {
-    border-radius: 15px;
-    border: none;
-    background-color: #1E1E20;
-    }
-    
-    .card-header {
-    background-color: #252529;
-    border-radius: 15px 15px 0 0;
-    color: #fff;
-    }
-    
-    .card-footer {
-    background-color: #252529;
-    border-radius: 0 0 15px 15px;
-    color: #fff;
-    }
-    
-    .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0;
-    }
-    
-    .card-text {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    }
-    
-    .timeline-body {
-    position: relative;
-    }
-    
-    .timeline-time {
-    position: absolute;
-    top: -30px;
-    right: 0;
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #fff;
-    }
-    
-    .timeline-panel {
-    background-color: #1E1E20;
-    border-radius: 10px;
-    border: none;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    }
-    
-    .timeline-heading {
-    margin-bottom: 1.5rem;
-    }
-    
-    .timeline-heading h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0;
-    }
-    
-    .timeline-heading p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-    }
-    
-    .timeline-body p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    }
-    
-    .contact-form {
-    background-color: #1E1E20;
-    border-radius: 15px;
-    padding: 2rem;
-    }
-    
-    .contact-form h1 {
-    margin-top: 0;
-    }
-    
-    .contact-form label {
-    font-size: 1.2rem;
-    }
-    
-    .contact-form input,
-    .contact-form textarea {
-    background-color: #252529;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    }
-    
-    .contact-form textarea {
-    height: 200px;
-    }
-    
-    .contact-form button {
-    margin-top: 1rem;
-    float: right;
-    }
-    
-    @media (max-width: 767px) {
-    .timeline-panel {
-    padding: 1rem;
-    }
-    .card-title {
-    font-size: 1.2rem;
-    }
-    
-    .card-text {
-    font-size: 1rem;
-    }
-    }
-    
-    @media (max-width:575px) {
-      .navbar-nav .nav-link {
-      font-size: 1rem;
-      }
-      
-      .timeline > li .timeline-body:before {
-      top: 23px;
-      left: auto;
-      right: -15px;
-      border-width: 8px;
-      border-color: transparent #fff transparent transparent;
-      }
-      }
-      
-      /* Contact Form */
-      
-      .contact-form {
-      background-color: #1E1E20;
-      border-radius: 15px;
-      padding: 2rem;
-      }
-      
-      .contact-form h1 {
-      margin-top: 0;
-      }
-      
-      .contact-form label {
-      font-size: 1.2rem;
-      }
-      
-      .contact-form input,
-      .contact-form textarea {
-      background-color: #252529;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      margin-bottom: 1rem;
-      padding: 0.5rem;
-      }
-      
-      .contact-form textarea {
-      height: 200px;
-      }
-      
-      .contact-form button {
-      margin-top: 1rem;
-      float: right;
-      }
-
